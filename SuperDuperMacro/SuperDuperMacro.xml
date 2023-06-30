@@ -6,8 +6,8 @@
 			</OnShow>
 			<OnUpdate> sdm_OnUpdate(self, elapsed); </OnUpdate>
 		</Scripts>
-	</Frame>
-	<Frame name="sdm_mainFrame" toplevel="true" parent="UIParent" movable="true" enableMouse="true" hidden="true">
+	</Frame>	
+	<Frame name="sdm_mainFrame" frameStrata="DIALOG" parent="UIParent" movable="true" enableMouse="true" hidden="true">
 		<Size x="832" y="447" />
 		<Anchors>
 			<Anchor point="TOPLEFT">
@@ -451,7 +451,7 @@
 			</OnHide>
 		</Scripts>
 	</Frame>
-	<Frame name="sdm_newFrame" hidden="true" inherits="UIParent" parent="sdm_mainFrame" toplevel="true">
+	<Frame name="sdm_newFrame" hidden="true" inherits="UIParent" parent="sdm_mainFrame">
 		<Size>
 			<AbsDimension x="280" y="125"/>
 		</Size>
@@ -701,7 +701,7 @@
 			</OnHide>
 		</Scripts>
 	</Frame>
-	<Frame name="sdm_newFolderFrame" hidden="true" inherits="UIParent" parent="sdm_mainFrame" toplevel="true">
+	<Frame name="sdm_newFolderFrame" hidden="true" inherits="UIParent" parent="sdm_mainFrame">
 		<Size>
 			<AbsDimension x="280" y="125"/>
 		</Size>
@@ -806,7 +806,7 @@
 			</OnLoad>
 		</Scripts>
 	</Frame>
-	<Frame name="sdm_changeIconFrame" hidden="true" inherits="UIParent" parent="sdm_mainFrame" toplevel="true">
+	<Frame name="sdm_changeIconFrame" hidden="true" inherits="UIParent" parent="sdm_mainFrame">
 		<Size>
 			<AbsDimension x="297" y="350"/>
 		</Size>
